@@ -1,0 +1,35 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type=text/css>
+A:link {COLOR:#FF0000; TEXT-DECORATION:none;font-size:10pt;font-family:microsoft sans serif;}
+A:visited {COLOR:#0000FF; TEXT-DECORATION:none;font-size:10pt;font-family:microsoft sans serif;}
+A:hover {COLOR:#FF0000; TEXT-DECORATION:none;font-size:10pt;font-family:microsoft sans serif;}
+body {font-family:microsoft sans serif; font-size:10pt;}
+td {font-family:microsoft sans serif; font-size:10pt}
+</style>
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;s
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+label {
+  padding: 5px 15px;
+  background-color: 86C6F4;
+  border: thin solid 084594;
+  border-radius: 10px;
+  margin:5px;
+  display: inline-block;}
+input[type="radio"]:checked + label {
+    background-color: darkblue;
+    cursor: default;
+    color: #86C6F4;}
