@@ -13,14 +13,63 @@
   <div class="header">
     <a href="#default" class="logo">PREVENTIVE MEASURES OF COVID-19</a>
     <div class="header-right">
-      <a class="header-right" href="mini\index.html">Home</a>
-      <a href="#contact">Contact</a>
     </div>
   </div>
   <div style="padding-left:20px">
     <h1>มาตราการควบคุมและป้องกัน Covid-19</h1>
     <p>ความรุนแรงของการแพร่ระบาดของโรคโควิด 19 ในประเทศไทย ศูนย์บริหารสถานการณ์โควิดจึงมีการออกคำสั่งมาตรการการควบคุมและป้องกันโรคโควิด 19 มาเรื่อยๆ เพื่อป้องกันและลดการแพร่ระบาดของโรคโควิด 19 ในประเทศไทย แต่เนื่องด้วยสถานการณ์โควิด 19 ของแต่ละจังหวัดในประเทศไทยมีสถานการณ์ความรุนแรงของการแพร่ระบาดที่ต่างกัน มาตรการที่ออกมาจึงมีหลายฉบับ ใช้ตามความเหมาะสมของสถานการณ์แต่ละจังหวัดในประเทศไทย </p>
   </div>
+  <hr>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="image\1.png" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="image\2.png" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
 <hr>
 <center><table border>
 <tr bgcolor='#DCDCDC'>
@@ -119,9 +168,8 @@
 <hr>
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/v2_0TFmO6eg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 <hr>
-
-<div style="paddind-right:20px">
-<h1>Contact</h1>
+<div style="paddind-left:20px">
+<h1 align="left">Contact</h1>
 </div>
 </div>
   <style>
@@ -150,6 +198,18 @@
     color: #FFFFFF;
   }
 </style>
+
+<table>
+  <tr>
+   <th>สำนักงานหลักประกันสุขภาพแห่งชาติ สายด่วน 1330</th>
+   <th>กรมควบคุมโรค 1422</th>
+   <th>กรมการแพทย์ 1668</th>
+   <th>สถาบันการแพทย์ฉุกเฉิน 1669</th>
+  <th>ประกันสังคม 15062</th>
+  <th>สายด่วนสุขภาพจิต 1323</th>
+ </tr>
+</table>
+
 <a href= "https://www.facebook.com/470988516420706/posts/1347501445436071/" class= "fa fa-facebook"></a>
 <a href="https://twitter.com/pr_moph" class="fa fa-twitter"></a>
 <a href="https://ddc.moph.go.th" class="fa fa-google"></a>
