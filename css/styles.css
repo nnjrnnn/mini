@@ -159,7 +159,7 @@ label {
   margin:5px;
   display: inline-block;}
 input[type="radio"]:checked + label {
-    background-color: darkblue;
+    background-color: #7FFFD4;
     cursor: default;
     color: #F0FFF0;}
 
